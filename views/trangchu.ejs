@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DEMO CHATBOX</title>
+    <link rel="stylesheet" href="layout.css">
+    <script src="socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="xuly.js"></script>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="loginForm">
+            <h3>Your name </h3>
+            <input type="text" id="txtUsername">
+            <input type="button" id="btnRegister" value="Register">
+        </div>
+        <div class="chatForm">
+            <div id="left">
+                <div id="boxTittle"><h3>User Online</h3></div>
+                <div id="boxContent">
+
+
+                    
+                </div>
+            </div>
+            <div id="right">
+                <div id="sayHi">
+                    Hello <span id="currentUser">Teo</span>
+                    <input type="button" id="btnLogout" value="Logout">
+                </div>
+                <div id="listMessage">
+
+                </div>
+
+                <input type="text" id="txtMessage">    
+                <input type="button" id="btnSend" value="Send">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
